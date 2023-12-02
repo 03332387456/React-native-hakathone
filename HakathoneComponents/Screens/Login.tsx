@@ -10,7 +10,7 @@ export default function Login({ navigation }: any) {
     const [model, setModel] = useState<any>({})
 
     const noAcc = () => {
-        navigation.navigate("Signup")
+        navigation.navigate("Signup" ,)
     }
     // const Todoapp = () => {
     //     navigation.navigate("Task")
@@ -23,7 +23,7 @@ export default function Login({ navigation }: any) {
                 let user = data.val()
                 console.log(user);
                 ToastAndroid.show(`Welcome to Our Home Page`, ToastAndroid.SHORT)
-                navigation.navigate("Products")
+                navigation.navigate("Home", {user})
             })
         }).catch((err) => {
             ToastAndroid.show(`invalid Email and Password ${err}`, ToastAndroid.SHORT)

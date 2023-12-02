@@ -10,6 +10,7 @@ import Task from '../Screens/Task';
 import CreateTask from '../Screens/CreateTask';
 import MyTasks from '../Screens/Task';
 import SingleTask from '../Screens/SingleTask';
+import Profile from '../Screens/Profile';
 
 
 
@@ -20,6 +21,7 @@ function StackNav() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Your Profile" component={Profile} />
         <Stack.Screen name="CreateTask" component={CreateTask} />
         <Stack.Screen name="MyTasks" component={MyTasks} />
         <Stack.Screen name="Single Task" component={SingleTask} />
